@@ -2,7 +2,7 @@
 <br>
 <hr>
 <h2> Learning </h2>
-<img scr = "resource/piano imgage.png" alt= "piano"> 
+<img scr = "resource/piano image.png" alt= "piano"> 
 <ul>
   <li>Sound in javascript </li>
   <li>Event listener </li>
