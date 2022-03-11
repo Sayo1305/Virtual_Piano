@@ -2,7 +2,7 @@
 <br>
 <hr>
 <h2> Learning </h2>
-<img scr = "https://github.com/Sayo1305/Virtual_Piano/blob/main/resource/piano%20image.png" alt= "piano"> 
+<img scr = "https://raw.githubusercontent.com/Sayo1305/Virtual_Piano/main/resource/piano%20image.png" alt= "piano"> 
 <ul>
   <li>Sound in javascript </li>
   <li>Event listener </li>
