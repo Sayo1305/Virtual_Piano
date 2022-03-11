@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My_Piano</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <main class="bg">
+        <section class="top_part">
+            <img src="resource/drop_speaker.png" style="width: 20%; height: 200px; margin-top: 40px;">
+            <div class="display">
+                <div class="glow">notes you pressed</div><span class="display_note" ></span>
+            </div>
+            <img src="resource/drop_speaker.png" style="width: 20%; height: 200px;  margin-top: 40px;">
+        </section>
+        <section class="mid_part">
+            <div>
+                <form style="color: rgb(255, 255, 255); font-size: 1rem;">
+                    <input type="checkbox" data-key-display value="OFF"> Show the letter on Board
+                </form>
+            </div>
+        </section>
+        <section class="bot_part">
+            <div class="notes">
+                <div class="note">
+                    <div class="white_note" data-note = "c2" ><span data-letter class="not_dis set_place_white">1</span></div>
+                    <div class="black_note" data-note="c#2"><span data-letter class="not_dis set_place_black">!</span></div>
+                </div>
+                <div class="note">
+                    <div class="white_note" data-note = "d2"><span data-letter class="not_dis set_place_white">2</span></div>
+                    <div class="black_note" data-note="d#2"><span data-letter class="not_dis set_place_black">@</span></div>
+                </div>
+                <div class="note">
+                    <div class="white_note" data-note="e2"><span data-letter class="not_dis set_place_white">3</span></div>
+                </div>
+                <div class="note">
+                    <div class="white_note"data-note="f2"><span data-letter class="not_dis set_place_white">4</span></div>
+                    <div class="black_note"data-note="f#2"><span data-letter class="not_dis set_place_black">$</span></div>
+                </div>
+                <div class="note">
+                    <div class="white_note" data-note="g2"><span data-letter class="not_dis set_place_white">5</span></div>
+                    <div class="black_note"data-note="g#2"><span data-letter class="not_dis set_place_black">%</span></div>
+                </div>
+                <div class="note">
+                    <div class="white_note" data-note="a2"><span data-letter class="not_dis set_place_white">6</span></div>
+                    <div class="black_note"data-note="a#2"><span data-letter class="not_dis set_place_black">^</span></div>
+                </div>
+                <div class="note">
+                    <div class="white_note" data-note="b2"><span data-letter class="not_dis set_place_white">7</span></div>
+                </div>
+                <div class="note">
+                    <div class="white_note" data-note="c3"><span data-letter class="not_dis set_place_white">8</span></div>
+                    <div class="black_note"data-note="c#3"><span data-letter class="not_dis set_place_black">*</span></div>
+                </div>
+                <div class="note">
+                    <div class="white_note" data-note="d3"><span data-letter class="not_dis set_place_white">9</span></div>
+                    <div class="black_note"data-note="d#3"><span data-letter class="not_dis set_place_black">(</span></div>
+                </div>
+                <div class="note">
+                    <div class="white_note" data-note="e3"><span data-letter class="not_dis set_place_white">q</span></div>
+                </div>
+                <div class="note">
+                    <div class="white_note" data-note="f3"><span data-letter class="not_dis set_place_white">w</span></div>
+                    <div class="black_note"data-note="e#3"><span data-letter class="not_dis set_place_black">Q</span></div>
+                </div>
+                <div class="note">
+                    <div class="white_note"data-note = "g3"><span data-letter class="not_dis set_place_white">e</span></div>
+                    <div class="black_note"data-note="f#3"><span data-letter class="not_dis set_place_black">W</span></div>
+                </div>
+                <div class="note">
+                    <div class="white_note" data-note="a3"><span data-letter class="not_dis set_place_white">r</span></div>
+                    <div class="black_note"data-note="g#3"><span data-letter class="not_dis set_place_black">E</span></div>
+                </div>
+                <div class="note">
+                    <div class="white_note" data-note="b3"><span data-letter class="not_dis set_place_white">t</span></div>
+                </div>
+                <div class="note">
+                    <div class="white_note" data-note="c4"><span data-letter class="not_dis set_place_white">y</span></div>
+                    <div class="black_note"data-note="a#3"><span data-letter class="not_dis set_place_black">T</span></div>
+                </div>
+                <div class="note">
+                    <div class="white_note" data-note="d4"><span data-letter class="not_dis set_place_white">u</span></div>
+                    <div class="black_note"data-note="c#4"><span data-letter class="not_dis set_place_black">Y</span></div>
+                </div>
+                <div class="note">
+                    <div class="white_note" data-note="e4"><span data-letter class="not_dis set_place_white">i</span></div>
+                </div>
+                <div class="note">
+                    <div class="white_note" data-note="f4"><span data-letter class="not_dis set_place_white">o</span></div>
+                    <div class="black_note"data-note="d#4"><span data-letter class="not_dis set_place_black">I</span></div>
+                </div>
+                <div class="note">
+                    <div class="white_note" data-note="g4"><span data-letter class="not_dis set_place_white">p</span></div>
+                    <div class="black_note" data-note="f#4"><span data-letter class="not_dis set_place_black">O</span></div>
+                </div>
+                <div class="note">
+                    <div class="white_note"data-note="a4"><span data-letter class="not_dis set_place_white">a</span></div>
+                    <div class="black_note"data-note="g#4"><span data-letter class="not_dis set_place_black">P</span></div>
+                </div>
+                <div class="note">
+                    <div class="white_note" data-note="b4"><span data-letter class="not_dis set_place_white">s</span></div>
+                </div>
+                <div class="note">
+                    <div class="white_note" data-note="c5"><span data-letter class="not_dis set_place_white">d</span></div>
+                    <div class="black_note"data-note="a#4"><span data-letter class="not_dis set_place_black">S</span></div>
+                </div>
+                <div class="note">
+                    <div class="white_note" data-note="d5"><span data-letter class="not_dis set_place_white">f</span></div>
+                    <div class="black_note"data-note="c#5"><span data-letter class="not_dis set_place_black">D</span></div>
+                </div>
+                <div class="note">
+                    <div class="white_note" data-note="e5"><span data-letter class="not_dis set_place_white">g</span></div>
+                </div>
+                <div class="note">
+                    <div class="white_note" data-note="f5"><span data-letter class="not_dis set_place_white">h</span></div>
+                    <div class="black_note" data-note="d#5"><span data-letter class="not_dis set_place_black">G</span></div>
+                </div>
+                <div class="note">
+                    <div class="white_note" data-note="g5"><span data-letter class="not_dis set_place_white">j</span></div>
+                    <div class="black_note"data-note="f#5"><span data-letter class="not_dis set_place_black">H</span></div>
+                </div>
+                <div class="note">
+                    <div class="white_note" data-note="a5"><span data-letter class="not_dis set_place_white">k</span></div>
+                    <div class="black_note"data-note="g#5"><span data-letter class="not_dis set_place_black">J</span></div>
+                </div>
+                <div class="note">
+                    <div class="white_note" data-note="b5"><span data-letter class="not_dis set_place_white">l</span></div>
+                </div>
+                <div class="note">
+                    <div class="white_note" data-note="c6"><span data-letter class="not_dis set_place_white">z</span></div>
+                    <div class="black_note"data-note="a#5"><span data-letter class="not_dis set_place_black">L</span></div>
+                </div>
+                <div class="note">
+                    <div class="white_note" data-note="d6"><span data-letter class="not_dis set_place_white">x</span></div>
+                    <div class="black_note"data-note="c#6"><span data-letter class="not_dis set_place_black">Z</span></div>
+                </div>
+                <div class="note">
+                    <div class="white_note" data-note="e6"><span data-letter class="not_dis set_place_white">c</span></div>
+                </div>
+                <div class="note">
+                    <div class="white_note" data-note="f6"><span data-letter class="not_dis set_place_white">v</span></div>
+                    <div class="black_note"data-note="d#6"><span data-letter class="not_dis set_place_black">C</span></div>
+                </div>
+                <div class="note">
+                    <div class="white_note" data-note="g6"><span data-letter class="not_dis set_place_white">b</span></div>
+                    <div class="black_note"data-note="g#6"><span data-letter class="not_dis set_place_black">V</span></div>
+                </div>
+                <div class="note">
+                    <div class="white_note" data-note="a6"><span data-letter class="not_dis set_place_white">n</span></div>
+                    <div class="black_note" data-note="f#6"><span data-letter class="not_dis set_place_black">B</span></div>
+                </div>
+                <div class="note">
+                    <div class="white_note" data-note="b6"><span data-letter class="not_dis set_place_white">m</span></div>
+                </div>
+                <div class="note">
+                    <div class="white_note" data-note="c7"><span data-letter class="not_dis set_place_white">,</span></div>
+                </div>
+            </div>
+        </section>
+        <!-- audio files  -->
+        <audio id = "c2" src="resource/note/piano-sounds/NewPiano/c2.mp3"></audio>
+        <audio id = "d2" src="resource/note/piano-sounds/NewPiano/d2.mp3"></audio>
+        <audio id = "e2" src="resource/note/piano-sounds/NewPiano/e2.mp3"></audio>
+        <audio id = "f2" src="resource/note/piano-sounds/NewPiano/f2.mp3"></audio>
+        <audio id = "g2" src="resource/note/piano-sounds/NewPiano/g2.mp3"></audio>
+        <audio id = "a2" src="resource/note/piano-sounds/NewPiano/a2.mp3"></audio>
+        <audio id = "b2" src="resource/note/piano-sounds/NewPiano/b2.mp3"></audio>
+        <audio id = "c3" src="resource/note/piano-sounds/NewPiano/c3.mp3"></audio>
+        <audio id = "d3" src="resource/note/piano-sounds/NewPiano/d3.mp3"></audio>
+        <audio id = "e3" src="resource/note/piano-sounds/NewPiano/e3.mp3"></audio>
+        <audio id = "f3" src="resource/note/piano-sounds/NewPiano/f3.mp3"></audio>
+        <audio id = "g3" src="resource/note/piano-sounds/NewPiano/g3.mp3"></audio>
+        <audio id = "a3" src="resource/note/piano-sounds/NewPiano/a3.mp3"></audio>
+        <audio id = "b3" src="resource/note/piano-sounds/NewPiano/b3.mp3"></audio>
+        <audio id = "c4" src="resource/note/piano-sounds/NewPiano/c4.mp3"></audio>
+        <audio id = "d4" src="resource/note/piano-sounds/NewPiano/d4.mp3"></audio>
+        <audio id = "e4" src="resource/note/piano-sounds/NewPiano/e4.mp3"></audio>
+        <audio id = "f4" src="resource/note/piano-sounds/NewPiano/f4.mp3"></audio>
+        <audio id = "g4" src="resource/note/piano-sounds/NewPiano/g4.mp3"></audio>
+        <audio id = "a4" src="resource/note/piano-sounds/NewPiano/a4.mp3"></audio>
+        <audio id = "b4" src="resource/note/piano-sounds/NewPiano/b4.mp3"></audio>
+        <audio id = "c5" src="resource/note/piano-sounds/NewPiano/c5.mp3"></audio>
+        <audio id = "d5" src="resource/note/piano-sounds/NewPiano/d5.mp3"></audio>
+        <audio id = "e5" src="resource/note/piano-sounds/NewPiano/e5.mp3"></audio>
+        <audio id = "f5" src="resource/note/piano-sounds/NewPiano/f5.mp3"></audio>
+        <audio id = "g5" src="resource/note/piano-sounds/NewPiano/g5.mp3"></audio>
+        <audio id = "a5" src="resource/note/piano-sounds/NewPiano/a5.mp3"></audio>
+        <audio id = "b5" src="resource/note/piano-sounds/NewPiano/b5.mp3"></audio>
+        <audio id = "c6" src="resource/note/piano-sounds/NewPiano/c6.mp3"></audio>
+        <audio id = "d6" src="resource/note/piano-sounds/NewPiano/d6.mp3"></audio>
+        <audio id = "e6" src="resource/note/piano-sounds/NewPiano/e6.mp3"></audio>
+        <audio id = "f6" src="resource/note/piano-sounds/NewPiano/f6.mp3"></audio>
+        <audio id = "g6" src="resource/note/piano-sounds/NewPiano/g6.mp3"></audio>
+        <audio id = "a6" src="resource/note/piano-sounds/NewPiano/a6.mp3"></audio>
+        <audio id = "b6" src="resource/note/piano-sounds/NewPiano/b6.mp3"></audio>
+        <audio id = "c7" src="resource/note/piano-sounds/NewPiano/c7.mp3"></audio>
+        <audio id ="c#2" src="resource/note/piano-sounds/HardPiano/cs2.mp3"></audio>
+        <audio id ="d#2" src="resource/note/piano-sounds/HardPiano/ds2.mp3"></audio>
+        <audio id ="f#2" src="resource/note/piano-sounds/HardPiano/fs2.mp3"></audio>
+        <audio id ="g#2" src="resource/note/piano-sounds/HardPiano/gs2.mp3"></audio>
+        <audio id ="a#2" src="resource/note/piano-sounds/HardPiano/as2.mp3"></audio>
+        <audio id ="c#3" src="resource/note/piano-sounds/HardPiano/cs3.mp3"></audio>
+        <audio id ="d#3" src="resource/note/piano-sounds/HardPiano/ds3.mp3"></audio>
+        <audio id ="f#3" src="resource/note/piano-sounds/HardPiano/fs3.mp3"></audio>
+        <audio id ="g#3" src="resource/note/piano-sounds/HardPiano/gs3.mp3"></audio>
+        <audio id ="a#3" src="resource/note/piano-sounds/HardPiano/as3.mp3"></audio>
+        <audio id ="c#4" src="resource/note/piano-sounds/HardPiano/cs4.mp3"></audio>
+        <audio id ="d#4" src="resource/note/piano-sounds/HardPiano/ds4.mp3"></audio>
+        <audio id ="f#4" src="resource/note/piano-sounds/HardPiano/fs4.mp3"></audio>
+        <audio id ="g#4" src="resource/note/piano-sounds/HardPiano/gs4.mp3"></audio>
+        <audio id ="a#4" src="resource/note/piano-sounds/HardPiano/as4.mp3"></audio>
+        <audio id ="c#5" src="resource/note/piano-sounds/HardPiano/cs5.mp3"></audio>
+        <audio id ="d#5" src="resource/note/piano-sounds/HardPiano/ds5.mp3"></audio>
+        <audio id ="f#5" src="resource/note/piano-sounds/HardPiano/fs5.mp3"></audio>
+        <audio id ="g#5" src="resource/note/piano-sounds/HardPiano/gs5.mp3"></audio>
+        <audio id ="a#5" src="resource/note/piano-sounds/HardPiano/as5.mp3"></audio>
+        <audio id ="c#6" src="resource/note/piano-sounds/HardPiano/cs6.mp3"></audio>
+        <audio id ="d#6" src="resource/note/piano-sounds/HardPiano/ds6.mp3"></audio>
+        <audio id ="f#6" src="resource/note/piano-sounds/HardPiano/fs6.mp3"></audio>
+        <audio id ="g#6" src="resource/note/piano-sounds/HardPiano/gs6.mp3"></audio>
+        <audio id ="a#6" src="resource/note/piano-sounds/HardPiano/as6.mp3"></audio>
+        <audio id = "e#3" src="resource/note/piano-sounds/HardPiano/e3.mp3"></audio>
+
+    </main>
+</body>
+</html>
